@@ -240,10 +240,34 @@ document.addEventListener('DOMContentLoaded', () => {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         });
+        // Reset form and show success state
         enrollmentForm.reset();
         if (spinner) spinner.style.display = 'none';
         submitBtn.disabled = false;
         submitBtn.innerText = '✓ Application Submitted Successfully!';
+
+        // Open Calendly popup with prefilled values (name, email, phone -> a1, company -> a2)
+        try {
+          const calendlyBase = 'https://calendly.com/eximadvice/free-consultation';
+          const name = encodeURIComponent(data.fullname || '');
+          const email = encodeURIComponent(data.email || '');
+          const phone = encodeURIComponent(data.mobile || '');
+          const company = encodeURIComponent(data.company || '');
+
+          let calendlyUrl = `${calendlyBase}?name=${name}&email=${email}`;
+          if (phone) calendlyUrl += `&a1=${phone}`;
+          if (company) calendlyUrl += `&a2=${company}`;
+
+          if (window.Calendly && typeof Calendly.initPopupWidget === 'function') {
+            Calendly.initPopupWidget({ url: calendlyUrl });
+          } else {
+            // Fallback: open Calendly in a new tab
+            window.open(calendlyUrl, '_blank', 'noopener');
+          }
+        } catch (err) {
+          console.warn('Calendly prefill failed', err);
+        }
+
         setTimeout(() => { submitBtn.innerText = originalText; }, 3000);
       } catch (err) {
         if (spinner) spinner.style.display = 'none';
