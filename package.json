@@ -1,0 +1,19 @@
+{
+  "name": "exim-advice-website",
+  "version": "1.0.0",
+  "description": "EXIM ADVICE Export Import Consultant Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"*.html, css/*.css, js/*.js\""
+  },
+  "keywords": [
+    "export",
+    "import",
+    "consultant",
+    "website",
+    "calculator",
+    "trade"
+  ],
+  "author": "EXIM ADVICE",
+  "license": "ISC"
+}
