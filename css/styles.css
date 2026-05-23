@@ -706,8 +706,8 @@ img {
 }
 
 .products-export-section {
-  padding-top: 54px;
-  padding-bottom: 54px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .products-export-section .section-kicker,
@@ -719,7 +719,12 @@ img {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
-  font-size: 0.78rem;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.products-export-section .section-header h2 {
+  font-size: 2.15rem;
 }
 
 .products-export-section .industries-container {
@@ -729,8 +734,8 @@ img {
 }
 
 .products-export-section .industry-chip {
-  padding: 8px 12px;
-  font-size: 0.72rem;
+  padding: 10px 14px;
+  font-size: 0.84rem;
   line-height: 1;
 }
 
