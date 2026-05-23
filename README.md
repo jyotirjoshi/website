@@ -10,8 +10,8 @@ Quick steps to host this static site and configure Calendly:
 - Alternative hosting: Netlify or Vercel — connect the repo and deploy (they auto-detect static sites).
 
 - Calendly integration:
-  - Inline widget: `enroll.html` contains an inline Calendly widget div. Replace the `data-url` value with your Calendly link, e.g. `https://calendly.com/your-name/30min`.
-  - Popup widget: Navigation CTA uses `Calendly.initPopupWidget(...)` — update the URL there if you change the Calendly link.
+  - Inline widget: `enroll.html` contains an inline Calendly widget div. It uses `https://calendly.com/testing-bot124/30min`.
+  - Popup widget: Navigation CTA uses `Calendly.initPopupWidget(...)` with the same Calendly link.
   - The Calendly CSS and JS are already included near the footers of `contact.html` and `enroll.html`.
 
 - Quick local test:

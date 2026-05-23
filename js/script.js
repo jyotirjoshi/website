@@ -3,6 +3,7 @@
 */
 
 document.addEventListener('DOMContentLoaded', () => {
+  const CALENDLY_URL = 'https://calendly.com/testing-bot124/30min';
   
   // --- 1. Sticky Navigation Scroll Handler ---
   const navbar = document.querySelector('.navbar');
@@ -248,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Open Calendly popup with prefilled values (name, email, phone -> a1, company -> a2)
         try {
-          const calendlyBase = 'https://calendly.com/eximadvice/free-consultation';
+          const calendlyBase = CALENDLY_URL;
           const name = encodeURIComponent(data.fullname || '');
           const email = encodeURIComponent(data.email || '');
           const phone = encodeURIComponent(data.mobile || '');
