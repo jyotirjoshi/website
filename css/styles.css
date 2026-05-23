@@ -743,9 +743,7 @@ img {
 .process-card h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: block;
 }
 
 .process-step-num {
@@ -1972,7 +1970,16 @@ img {
 
   /* Process timeline */
   .process-timeline {
-    padding-left: 30px;
+    padding-left: 24px;
+    margin-top: 28px;
+  }
+
+  .process-step {
+    margin-bottom: 22px;
+  }
+
+  .process-badge {
+    left: -32px;
   }
 
   .process-card {
