@@ -589,12 +589,16 @@ img {
 .trust-section .section-header,
 .services-home-section .section-header,
 .products-export-section .section-header {
+  max-width: none;
+  width: 100%;
+  margin: 0 0 34px 0;
   text-align: left;
 }
 
 .trust-section .section-header h2,
 .services-home-section .section-header h2,
 .products-export-section .section-header h2 {
+  display: block;
   font-size: 2rem;
   margin-bottom: 8px;
   text-transform: none;
