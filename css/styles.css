@@ -595,8 +595,18 @@ img {
 .trust-section .section-header h2,
 .services-home-section .section-header h2,
 .products-export-section .section-header h2 {
+  font-size: 2rem;
   margin-bottom: 8px;
   text-transform: none;
+}
+
+.trust-section .section-header h2,
+.trust-section .section-header p,
+.services-home-section .section-header h2,
+.services-home-section .section-header p,
+.products-export-section .section-header h2,
+.products-export-section .section-header p {
+  text-align: left;
 }
 
 .trust-section .section-header h2::after,
@@ -611,7 +621,7 @@ img {
 }
 
 .trust-section .card-why {
-  padding: 16px;
+  padding: 20px;
   border: 1px solid rgba(6, 11, 55, 0.09);
   box-shadow: none;
 }
@@ -636,12 +646,12 @@ img {
 }
 
 .trust-section .card-why h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 8px;
 }
 
 .trust-section .card-why p {
-  font-size: 0.72rem;
+  font-size: 0.86rem;
   line-height: 1.55;
 }
 
@@ -651,7 +661,7 @@ img {
 }
 
 .services-home-section .card-service {
-  padding: 16px;
+  padding: 20px;
   box-shadow: none;
   border: 1px solid rgba(6, 11, 55, 0.09);
   border-top: 1px solid rgba(6, 11, 55, 0.09);
@@ -677,18 +687,18 @@ img {
 }
 
 .services-home-section .card-service h3 {
-  font-size: 0.82rem;
+  font-size: 1rem;
   margin-bottom: 8px;
 }
 
 .services-home-section .card-service p {
-  font-size: 0.72rem;
+  font-size: 0.84rem;
   margin-bottom: 10px;
   line-height: 1.55;
 }
 
 .services-home-section .service-link {
-  font-size: 0.73rem;
+  font-size: 0.8rem;
 }
 
 .products-export-section {
@@ -2088,6 +2098,12 @@ img {
     gap: 8px;
   }
 
+  .trust-section .section-header h2,
+  .services-home-section .section-header h2,
+  .products-export-section .section-header h2 {
+    font-size: 1.55rem;
+  }
+
   /* Welcome / Intro grid */
   .welcome-grid {
     grid-template-columns: 1fr;
@@ -2142,7 +2158,7 @@ img {
 
   .trust-section .card-why,
   .services-home-section .card-service {
-    padding: 14px;
+    padding: 16px;
   }
 
   .products-export-section .industry-chip {
