@@ -499,7 +499,7 @@ img {
   border-radius: var(--border-radius-md);
   padding: 35px;
   box-shadow: var(--shadow-light);
-  border: 1px solid rgba(6, 11, 55, 0.03);
+  border: 1px solid rgba(10, 61, 143, 0.12);
   transition: var(--transition-smooth);
   position: relative;
   overflow: hidden;
@@ -510,42 +510,32 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+  opacity: 0.95;
   height: 0;
-  background-color: var(--accent-green);
+  background: linear-gradient(90deg, var(--accent-blue-cta) 0%, #1f5fbf 100%);
   transition: var(--transition-smooth);
 }
 
 .card-why:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-premium);
 }
 
 .card-why:hover::before {
-  height: 100%;
-}
-
-.card-icon {
-  width: 60px;
-  height: 60px;
-  background-color: var(--light-green-bg-2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-  color: var(--primary-navy);
-  font-size: 1.5rem;
-}
-
-.card-why:hover .card-icon {
-  background-color: var(--accent-green);
-  color: var(--primary-navy);
+  height: 5px;
 }
 
 .card-why h3 {
   font-size: 1.25rem;
+  color: var(--primary-navy);
   margin-bottom: 15px;
+}
+
+.card-why p {
+  margin-bottom: 0;
 }
 
 /* --- Services Grid Section --- */
@@ -635,6 +625,38 @@ img {
   color: var(--white);
   border-color: var(--primary-navy);
   transform: scale(1.05);
+  box-shadow: var(--shadow-medium);
+}
+
+/* --- Blue Variant: Products Export Section --- */
+.products-export-section {
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-blue-cta) 100%);
+}
+
+.products-export-section .section-header h2,
+.products-export-section .section-header p {
+  color: var(--white);
+}
+
+.products-export-section .section-header p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.92;
+}
+
+.products-export-section .industry-chip {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: var(--white);
+  box-shadow: none;
+}
+
+.products-export-section .industry-chip:hover {
+  background: var(--white);
+  color: var(--accent-blue-cta);
+  border-color: var(--white);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-medium);
 }
 
